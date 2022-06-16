@@ -10,4 +10,4 @@ All the solutions I encountered when I created module survey report.
 ## 2. How to sort column by other column?
 [solution](https://community.powerbi.com/t5/Desktop/Modify-the-legend-order/m-p/25337)
 tips: click the column which you want to sort, then go to column tools - sort by column - sorted order
-![ScreenShot](HudUni\appendix\sorted order.PNG)
+![ScreenShot](/HudUni/appendix/sorted%20order.PNG)
