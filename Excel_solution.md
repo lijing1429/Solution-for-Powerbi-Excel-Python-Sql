@@ -24,3 +24,9 @@ All the solutions I encountered in different projects.
 - select chart title, then input `=cell`
 
 ![ScreenShot](/Appendix_excel/3-1.PNG)
+
+## 4. Contiditional format cell based on the comparision with the other cell?
+- `Conditional formatting` - `New rule` - `Format only cells that contain`
+
+![ScreenShot](/Appendix_excel/4-1.PNG)
+![ScreenShot](/Appendix_excel/4-2.PNG)
