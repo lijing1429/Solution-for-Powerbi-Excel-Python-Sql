@@ -30,3 +30,7 @@ All the solutions I encountered in different projects.
 
 ![ScreenShot](/Excel/Appendix_excel/4-1.PNG)
 ![ScreenShot](/Excel/Appendix_excel/4-2.PNG)
+
+## 5. Sumifs using if to filter different information
+- Using **blank range** and **blank column** to filter
+![ScreenShot](/Excel/Appendix_excel/5-1.PNG)
