@@ -34,3 +34,7 @@ All the solutions I encountered in different projects.
 ## 5. Sumifs using if to filter different information
 - Using **blank range** and **blank column** to filter
 ![ScreenShot](/Excel/Appendix_excel/5-1.PNG)
+
+## 6. Setting up/down arrow
+- Home - **Conditional formatting** - Manage rules - New rule - Format style - icon sets - choose **type** as **number**
+![ScreenShot](/Excel/Appendix_excel/6-1.PNG)
