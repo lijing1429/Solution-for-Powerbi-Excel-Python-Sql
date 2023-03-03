@@ -41,5 +41,34 @@ All the solutions I encountered in different projects.
 
 ## 7. Add line above/inside the specific bar as targets
 - **Change chart type** as **line** - Right click **Format Data Point** - change **Line** to **No line** - Change **Marker** as **Built in** - Change **Size**
-[R]eference](https://www.ablebits.com/office-addins-blog/add-line-excel-graph/)
+
+[Reference](https://www.ablebits.com/office-addins-blog/add-line-excel-graph/)
+
 ![ScreenShot](/Excel/Appendix_excel/7-1.PNG)
+
+## 8. Vlookup return multiple values vertically? 
+
+- Also using it to create the **independent list**
+- Find **D2** in range **A2:A11**, then return all the match rows in **B2:B11**
+
+```
+=IFERROR(INDEX($B$2:$B$11,SMALL(IF($D$2=$A$2:$A$11,ROW($A$2:$A$11)-ROW($A$2)+1),ROW(1:1))),"")
+ ```
+
+[Reference](https://www.statology.org/index-match-return-multiple-values-vertically/)
+
+![ScreenShot](/Excel/Appendix_excel/8-1.PNG)
+
+## 9. Vlookup return multiple values in same cells? 
+
+- Find **D2** in range **A2:A20**
+- Return all the match rows in **B2:B20**
+- **TEXTJOIN** all the return values together
+
+```
+=TEXTJOIN(", ",TRUE,IF(D2=$A$2:$A$20,$B$2:$B$20,""))
+```
+
+[Reference](https://trumpexcel.com/multiple-lookup-values-single-cell-excel/)
+
+![ScreenShot](/Excel/Appendix_excel/9-1.PNG)
