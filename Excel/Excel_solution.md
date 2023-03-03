@@ -38,3 +38,8 @@ All the solutions I encountered in different projects.
 ## 6. Setting up/down arrow
 - Home - **Conditional formatting** - Manage rules - New rule - Format style - icon sets - choose **type** as **number**
 ![ScreenShot](/Excel/Appendix_excel/6-1.PNG)
+
+## 7. Add line above/inside the specific bar as targets
+- **Change chart type** as **line** - Right click **Format Data Point** - change **Line** to **No line** - Change **Marker** as **Built in** - Change **Size**
+[R]eference](https://www.ablebits.com/office-addins-blog/add-line-excel-graph/)
+![ScreenShot](/Excel/Appendix_excel/7-1.PNG)
