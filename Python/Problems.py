@@ -166,3 +166,54 @@ df = pd.DataFrame({'name': ['var1','var2','var3','var4','var1','var2','var3','va
 colist = df.columns.tolist()
 colist.pop(-2)
 df = df.loc[:,colist]
+
+'''Solved!!!
+16. How to solve the group by ignore the Nan automatically?
+https://stackoverflow.com/questions/18429491/pandas-groupby-columns-with-nan-missing-values
+'''
+df = pd.DataFrame({'a': ['1', '2', '3'], 'b': ['4', np.NaN, '6']})
+print(df.groupby('b').sum())
+print(df.groupby('b', dropna=False).sum())
+
+'''Solved!!!
+17. go through all the files in the given path/folder
+https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory
+'''
+
+# filenames = next(os.walk(path))[2]  # A one-line solution to get only list of files (no subdirectories)
+# paths = [os.path.join(path, fn) for fn in next(os.walk(path))[2]] # or absolute pathnames
+
+'''Solved!!!
+18. how to combine the different dataframe together?
+'''
+df1 = pd.DataFrame([[0, 123, 321,'a'], [0, 1543, 432,'b']],columns=['click', 'id', 'location','pop'])
+df2 = pd.DataFrame([[1, 123, 421,'b'], [1, 1543, 436,'c']],columns=['click', 'location','id','yu'])
+new_df = pd.concat([df1,df2])
+
+'''Solved!!!
+19. how to remove the space of the column name in dataframe?
+'''
+df1 = pd.DataFrame([[0, 123, 321,'a'], [0, 1543, 432,'b']],columns=['click  ', '  id', ' location ','pop'])
+l1 = [x.strip() for x in df1.columns.tolist()]
+df1.columns = l1
+
+'''Solved!!!
+20. How to concat the for loop dataframe into one dataframe?
+'''
+df1 = pd.DataFrame([[0, 123, 321,'a'], [0, 1543, 432,'b']],columns=['click  ', '  id', ' location ','pop'])
+l1 = []
+for i in range(3):
+  l1.append(df1)
+
+finaldf = pd.concat(l1)
+
+'''Solved!!!
+21. count the rows of dataframe
+'''
+len(df1)
+
+''' Solved!!!
+22. caculate the elements of list
+'''
+l2 = [5, 3, 7, 5, 3, 5, 6, 2, 3, 4, 2, 5, 7, 3, 4, 10, 8]
+results = sum(x for x in l2)
