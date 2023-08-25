@@ -72,3 +72,5 @@ All the solutions I encountered in different projects.
 [Reference](https://trumpexcel.com/multiple-lookup-values-single-cell-excel/)
 
 ![ScreenShot](/Excel/Appendix_excel/9-1.PNG)
+
+## 10. How to add in Power Pivot in Excel?
